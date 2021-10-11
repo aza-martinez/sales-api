@@ -7,6 +7,7 @@ import IndexRoutes from "./routes/index.routes";
 import UsersRoutes from "./routes/users.routes";
 import ClientsRoutes from "./routes/clients.routes";
 import SalesRoutes from "./routes/sales.routes";
+import TeamsRoutes from "./routes/teams.routes";
 
 export class App {
   private app: Application;
@@ -38,6 +39,7 @@ export class App {
     this.app.use("/users", UsersRoutes);
     this.app.use("/clients", ClientsRoutes);
     this.app.use("/sales", SalesRoutes);
+    this.app.use("/teams", TeamsRoutes);
   }
 
   async listen() {
